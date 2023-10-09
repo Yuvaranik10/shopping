@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt {
+            font-weight: bold;
+        }
+        .UserName:invalid+div {
+            display: block;
+            color: red;
+        }
+        .UserName:valid+div {
+            display: none;
+        }
+        .Mobile:vaid+div {
+            display: block;
+            color: red;
+        }
+        .Mobile:vaid+div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>User Name</dt>
+            <dd>
+                <input type="text" class="UserName" required>
+                <div>User Name Required</div>
+            </dd>
+            <dt>Mobile</dt>
+            <dd>
+                <input type="text" pattern="\+91\d{10}" class="Mobile">
+                <div>Invalid Mobile: +91 and 10 digits required</div><br>
+                <button>Submit</button>
+            </dd>
+        </dl>
+    </form>
+</body>
+</html>

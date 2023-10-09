@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        details div{
+            width: 200px;
+            border: 20px greenyellow;
+            margin-bottom: 20px;
+            background-color: wheat;
+            padding: 10px;
+            background-color: bisque;
+            margin-left: 20px;
+        }
+        details summary{
+            width: 200px;
+            border: 2px skyblue;
+            margin-bottom: 10px;
+            background-color: teal;
+            padding: 10px;
+            margin-left: 20px;
+        }
+        .heading{
+            display: flex;
+        }
+        nav summary:hover{
+            cursor: grab;
+            font-size: 20px;
+            background-color: seashell;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <menu class="heading">
+            <details open>
+                <summary>Clothes</summary>
+                <div>Partywere</div>
+                <div>T-shirt</div>
+                <div>Jeans</div>
+            </details>
+            <details>
+                <summary>Footwere</summary>
+                <div>Casuals</div>
+                <div>Heels</div>
+                <div>Boots</div>
+            </details>
+        </menu>
+    </nav>
+</body>
+</html>

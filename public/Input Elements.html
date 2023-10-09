@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Nmae: <input type="text" name="Name" autofocus required><br><br>
+        Password:<input type="password" name="Password" required minlength pattern="(?=.*[A-Z])\w{4,15}"><br><br>
+        Age: <input type="text" min="10" max="50" value="22" Dec="09"><br><br>
+        E-mail: <input type="text" name="E-mail"><br><br>
+        OTP: <input type="text" name="OTP" pattern="\d{4,4}" required><br><br>
+        Mobile no.: <input type="text" name="mobile no" placeholder="+91" pattern="\d{8,8}" required><br><br>
+        URL: <input type="text" name="Url" required><br><br>
+        Date: <input type="datetime-local" name="Date" min="2022-12-19" max="2022-12-25" required><br><br>
+        File: <input type="file" name="file" accept="">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            border:1px solid black;
+            padding: 5px;
+            width: 100px;
+        }
+        @media screen and (min-width:600px) {
+            ul {
+                display: flex;
+            }
+            li {
+                margin-right: 20px;
+                background-color: slateblue;
+            }
+        }
+        @media screen and (max-width:599px) {
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+            li {
+                margin-top: 20px;
+                background-color: skyblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Fashion</li>
+            <li>Footwear</li>
+        </ul>
+    </nav>
+</body>
+</html>
+        
+        

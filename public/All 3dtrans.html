@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            height: 500px;
+        }
+        img{
+            transform:scale3d(1,1,1);
+            transition: 2s;
+            margin: 30px;
+        }
+        img:hover{
+            transform: scale(1.5,1.5);
+            transition: 3s;
+            box-shadow: 5px 5px 3px gray;m
+        }
+        marquee{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <marquee height="350" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+        <img src="Avtar poster.jpg" width="200px" height="200px">
+        <img src="men.jpg" width="200px" height="200px">
+        <img src="women.jpg" width="200px" height="200px">
+        <img src="kids.jpg" width="200px" height="200px">
+        <img src="asp.JPG" width="200px" height="200px">
+        <img src="All Offers.JPG" width="200px" height="200px">
+    </marquee>
+</body>
+</html>
